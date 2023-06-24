@@ -11,7 +11,7 @@ class Chronometer {
       if (typeof callback === 'function') {
         callback();
       }
-      if (this.currentTimeMs % (100 - 0.0001) === 0) {
+      if (this.currentTimeMs % 100 === 99) {
         this.currentTime++;
       }
     }, 10);
@@ -56,3 +56,9 @@ class Chronometer {
 if (typeof module !== 'undefined') {
   module.exports = Chronometer;
 }
+
+// const chrono = new Chronometer();
+// chrono.currentTime = 65;
+// console.log(chrono.computeTwoDigitNumber(chrono.getMinutes()));
+// console.log(chrono.computeTwoDigitNumber(chrono.getSeconds()));
+// console.log(chrono.split());
