@@ -121,6 +121,9 @@ body {
 .btn.stop {
   background: #f14949;
 }
+.btn.stop:hover {
+  background: #b43737;
+}
 .btn.reset {
   background: #908e8e;
 }
@@ -129,4 +132,7 @@ body {
 }
 .btn.split {
   background: #0851ab;
+}
+.btn.split:hover {
+  background: #063b7d;
 }
